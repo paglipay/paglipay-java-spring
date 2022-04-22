@@ -1,0 +1,28 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /
+    
+spring:
+  application: 
+    name: paglipay-spring-demo
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-44-199-143-43.compute-1.amazonaws.com:5432/dbviane0gh95jo
+    username: tcxeuaytydswjy
+    password: b362c85e3483dd7787b631efbac5ed5a8d1af6fb550a656360d190feb582410a
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "beans"
+          - "health"
+          - "info"
+   
