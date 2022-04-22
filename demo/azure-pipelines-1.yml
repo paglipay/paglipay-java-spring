@@ -1,0 +1,6 @@
+
+- task: AzureCLI@2
+  inputs:
+    scriptType: 'batch'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'ls -la'
